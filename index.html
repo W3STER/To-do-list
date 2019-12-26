@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Todo</title>
+</head>
+
+<body>
+    
+    <header class="header header-bg">
+
+        <div class="container">
+            <div class="header-logo">ToDo</div>
+            <div class="user-input">
+                <input class="input-text input" type="text" name="text" placeholder="Введите задачу">
+                <input class="input-data input" type="date" name="date">
+                <button id="add">Add</button>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="section section-card">
+
+        <div class="container">
+            <div class="section-content">
+                <div class="section-title">Your tasks</div>
+
+                <div class="card-content">
+                    <div class="card-box">
+                        <div class="card-box-content">
+                            <div class="card-header">
+                                <div class="card-title">To do (<span class="counter">0</span>)</div>
+                                <button class="delete-all">Close all</button>
+                            </div>
+                            <div class="card-body">
+                                <ul class="task-list to-do">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <div class="card-box-content">
+                            <div class="card-header">
+                                <div class="card-title">In progress (<span class="counter">0</span>)</div>
+                                <button class="delete-all">Close all</button>
+                            </div>
+                            <div class="card-body">
+                                <ul class="task-list in-progress">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <div class="card-box-content">
+                            <div class="card-header">
+                                <div class="card-title">Done (<span class="counter">0</span>)</div>
+                                <button class="delete-all">Close all</button>
+                            </div>
+                            <div class="card-body">
+                                <ul class="task-list done">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-modal">
+        <div class="modal-body">
+            <div class="modal-text">Чтобы добавить задачу в список "In progress",<br> 
+                вам необходимо выполнить одну из задач этого списка</div>
+            <button class="close-modal">Ok</button>
+        </div>
+    </section>
+
+    <section class="section-modal delete-modal">
+        <div class="modal-body">
+            <div class="modal-text">Удалить все задачи из списка "In progress"?</div>
+            <div class="modal-buttons">
+                <button class="close-warning-modal">Cancel</button>
+                <button class="delete-list-modal">Ok</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-modal delete-progress-task">
+        <div class="modal-body">
+            <div class="modal-text">Удалить задачу из списка "In progress"?</div>
+            <div class="modal-buttons">
+                <button class="close-warning-modal">Cancel</button>
+                <button class="delete-task-modal">Ok</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="assets/js/javascript.js"></script>
+</body>
+
+</html>
